@@ -1,47 +1,24 @@
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Major+Mono+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
-.ctt {
-    padding-top: 100vh;
-}
-body {
-    background-color: #5b633f;
-    position: relative;
-    z-index: 1;
-}
-.principal {
-    text-align: center;
-} 
-.HfaixaBranca {
+ 
+.IfaixaBranca {
     background-color: #d8bb5d;
     height: 70px; 
     width: 100%;
     position: absolute;
-    top: 5%; 
+    top: 0; 
     left: 0;
     transform: translateY(-50%);
     z-index: 1;
-    margin-top: 3px;
+    margin-top: 35px;
 }
 .content {
-    margin-top: -15px;
-}
-.logo22 {
-    position: fixed;
-    margin-top: -10px;
-    padding: 10px; 
-    width: 100px; 
-    height: auto;
-    margin-left: -300px;
+    color: #ffffff; 
+    margin-left: 300px;
+    padding: 15px;
 }
 .imagem {
     height: calc(111vh - 70px);
@@ -83,51 +60,25 @@ body {
     font-weight: 400;
     font-style: normal;
 }
-#Hcomecar {
+#comecar {
     margin-top: 150px;
-    width: 130px;
-    height: 35px;
-    background-color: #ffffff;
-    border: 1px solid #000000;
-    transition: all 0.4s ease;
+    width: 90px;
+    height: 30px;
+    background-color: rgb(205, 133, 63);
+    border: none;
+    transition: 0.4s ease;
     color: black;
     cursor: pointer;
-    font-weight: 700;
+    font-weight: 1000;
     font-family: "DM Serif Display", serif;
     font-style: normal;
     letter-spacing: 1px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    border-radius: 10px;
 }
-  
-#Hcomecar::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -50%;
-    width: 200%;
-    height: 100%;
-    background: linear-gradient(120deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
-    transition: all 0.4s ease;
-    z-index: -1;
-}
-  
-#Hcomecar:hover::before {
-    left: 50%;
-}
-  
-#Hcomecar:hover {
-    color: #ffffff;
-    background-color: #d8bb5d;
-    border-color: #000000;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+#comecar:hover {
     transform: scale(1.1);
 }
-
-.Hcontent2 {
+.content2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,61 +89,151 @@ body {
     width: 340px;
     height: 80px;
     padding-top: 95px;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 300;
-    font-style: normal;
 }
-.Hcontent2 a {
+.content2 a {
     color: black; 
     text-decoration: none;
 }
-.Hhome {
-    padding: 3px;
-    width: 70px;
-    height: 30px;
-    text-align: center;
-    color: rgb(255, 255, 255); 
-    text-decoration: underline;
-}
-.Hhome a {
-    color: rgb(255, 255, 255); 
-}
-.imoveis {
+
+.Chome {
     padding: 4px;
     width: 70px;
     height: 30px;
     text-align: center;
+}
+.Iimoveis {
+    padding: 4px;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+.Iimoveis a {
+    color: aliceblue;
 }
 .quemsou {
     padding: 4px;
-    width: 130px;
+    width: 120px;
     height: 30px;
     text-align: center;
 }
-.contato {
-    padding: 4px;
+.Ccontato2 {
+    padding: 3px;
     width: 80px;
     height: 30px;
     text-align: center;
 }
-.wpp { 
+
+
+
+/* Estilos para a seção de imóveis de destaque */
+.destaques {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #5b633f;
+    width: 100%;
+    padding-top: 100px;
+  }
+  
+  .destaques h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    background-color: #5b633f; 
+    height: 60px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 11px;
+    border: 4px solid #d8bb5d;
+  }
+  
+  .imoveis-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .imovel {
+    position: relative;
+    flex: 1 1 calc(33.333% - 40px); /* Ajusta para 3 itens por linha, com espaçamento */
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .imovel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border: 4px solid #d8bb5d;
+  }
+  
+  .imovel:hover img {
+    transform: scale(1.1);
+  }
+  
+  .imovel:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .imovel:hover .overlay {
+    transform: scale(1);
+  }
+  
+  .overlay h3 {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.Iwpp { 
     position: fixed;
     top: 490px;
     right: -10px;
-
 }
       
-.logo {
+.Ilogo {
     height: 160px; 
     width: 160px;
 }
-#bt {
+#Ibt {
     position: fixed;
-    margin-left: 508px;
+    margin-left: 1240px;
     width: 80px;
     height: 80px;
     top: 528px;
     opacity: 0;
     cursor: pointer;
 }
+  
+  
+  
+
+
 

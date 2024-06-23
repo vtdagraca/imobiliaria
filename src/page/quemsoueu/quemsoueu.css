@@ -1,47 +1,30 @@
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Major+Mono+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
-.ctt {
-    padding-top: 100vh;
-}
-body {
-    background-color: #5b633f;
-    position: relative;
-    z-index: 1;
+.qse {
+    padding-top: 0px;
 }
 .principal {
     text-align: center;
 } 
-.HfaixaBranca {
+.QfaixaBranca {
     background-color: #d8bb5d;
-    height: 70px; 
+    height: 70px; /* Altura da faixa branca */
     width: 100%;
     position: absolute;
-    top: 5%; 
+    top: 5%; /* Posição vertical central */
     left: 0;
     transform: translateY(-50%);
     z-index: 1;
-    margin-top: 3px;
+    margin-top: 35px;
+    
 }
 .content {
-    margin-top: -15px;
-}
-.logo22 {
-    position: fixed;
-    margin-top: -10px;
-    padding: 10px; 
-    width: 100px; 
-    height: auto;
-    margin-left: -300px;
+    color: #ffffff; /* Cor do texto */
+    margin-left: 300px;
+    padding: 15px;
 }
 .imagem {
     height: calc(111vh - 70px);
@@ -83,51 +66,25 @@ body {
     font-weight: 400;
     font-style: normal;
 }
-#Hcomecar {
+#comecar {
     margin-top: 150px;
-    width: 130px;
-    height: 35px;
-    background-color: #ffffff;
-    border: 1px solid #000000;
-    transition: all 0.4s ease;
+    width: 90px;
+    height: 30px;
+    background-color: rgb(205, 133, 63);
+    border: none;
+    transition: 0.4s ease;
     color: black;
     cursor: pointer;
-    font-weight: 700;
+    font-weight: 1000;
     font-family: "DM Serif Display", serif;
     font-style: normal;
     letter-spacing: 1px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    border-radius: 10px;
 }
-  
-#Hcomecar::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -50%;
-    width: 200%;
-    height: 100%;
-    background: linear-gradient(120deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
-    transition: all 0.4s ease;
-    z-index: -1;
-}
-  
-#Hcomecar:hover::before {
-    left: 50%;
-}
-  
-#Hcomecar:hover {
-    color: #ffffff;
-    background-color: #d8bb5d;
-    border-color: #000000;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+#comecar:hover {
     transform: scale(1.1);
 }
-
-.Hcontent2 {
+.content2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,57 +99,36 @@ body {
     font-weight: 300;
     font-style: normal;
 }
-.Hcontent2 a {
-    color: black; 
-    text-decoration: none;
-}
-.Hhome {
-    padding: 3px;
-    width: 70px;
-    height: 30px;
-    text-align: center;
-    color: rgb(255, 255, 255); 
-    text-decoration: underline;
-}
-.Hhome a {
-    color: rgb(255, 255, 255); 
-}
-.imoveis {
-    padding: 4px;
-    width: 70px;
-    height: 30px;
-    text-align: center;
-}
-.quemsou {
-    padding: 4px;
-    width: 130px;
-    height: 30px;
-    text-align: center;
-}
-.contato {
-    padding: 4px;
-    width: 80px;
-    height: 30px;
-    text-align: center;
-}
-.wpp { 
-    position: fixed;
-    top: 490px;
-    right: -10px;
 
+.Chome {
+    padding: 4px;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0);
 }
-      
-.logo {
-    height: 160px; 
-    width: 160px;
+.Iimoveis2 {
+    padding: 4px;
+    width: 70px;
+    height: 30px;
+    text-align: center;
 }
-#bt {
-    position: fixed;
-    margin-left: 508px;
+.Qquemsou {
+    padding: 4px;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    text-decoration: underline;
+    color: #ffffff;
+}
+.Qquemsou a {
+    color: aliceblue;
+}
+.Ccontato2 {
+    padding: 4px;
     width: 80px;
-    height: 80px;
-    top: 528px;
-    opacity: 0;
-    cursor: pointer;
+    height: 30px;
+    text-align: center;
 }
+
 
