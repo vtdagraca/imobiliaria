@@ -113,6 +113,10 @@
     height: 30px;
     text-align: center;
 }
+.Iimoveis2:hover {
+    border: 2px solid #5b633f;
+    padding: 2px;
+}
 .Qquemsou {
     padding: 4px;
     width: 120px;
@@ -120,6 +124,10 @@
     text-align: center;
     text-decoration: underline;
     color: #ffffff;
+}
+.Qquemsou:hover {
+    border: 2px solid #5b633f;
+    padding: 2px;
 }
 .Qquemsou a {
     color: aliceblue;
@@ -129,6 +137,10 @@
     width: 80px;
     height: 30px;
     text-align: center;
+}
+.Ccontato2:hover {
+    border: 2px solid #5b633f;
+    padding: 2px;
 }
 
 

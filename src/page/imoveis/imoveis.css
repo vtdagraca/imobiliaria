@@ -109,6 +109,10 @@
     color: white;
     text-decoration: underline;
 }
+.Iimoveis:hover {
+    border: 2px solid #5b633f;
+    padding: 2px;
+}
 .Iimoveis a {
     color: aliceblue;
 }

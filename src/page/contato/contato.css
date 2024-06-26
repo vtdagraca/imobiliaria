@@ -100,17 +100,29 @@
     text-align: center;
     color: rgb(0, 0, 0);
 }
+.Chome:hover {
+    border: 2px solid #5b633f;
+    padding: 2px;
+}
 .imoveis {
     padding: 4px;
     width: 70px;
     height: 30px;
     text-align: center;
 }
+.imoveis:hover {
+    border: 2px solid #5b633f;
+    padding: 2px;
+}
 .quemsou {
     padding: 4px;
     width: 120px;
     height: 30px;
     text-align: center;
+}
+.quemsou:hover {
+    border: 2px solid #5b633f;
+    padding: 2px;
 }
 .Ccontato {
     padding: 4px;
@@ -122,5 +134,9 @@
 }
 .Ccontato a {
     color: aliceblue;
+}
+.Ccontato:hover {
+    border: 2px solid #5b633f;
+    padding: 2px;
 }
 

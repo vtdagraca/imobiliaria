@@ -84,7 +84,7 @@ body {
     font-style: normal;
 }
 #Hcomecar {
-    margin-top: 150px;
+    margin-top: 90px;
     width: 130px;
     height: 35px;
     background-color: #ffffff;
@@ -157,11 +157,19 @@ body {
 .Hhome a {
     color: rgb(255, 255, 255); 
 }
+.Hhome:hover {
+    border: 2px solid #5b633f;
+    padding: 1px;
+}
 .imoveis {
     padding: 4px;
     width: 70px;
     height: 30px;
     text-align: center;
+}
+.imoveis:hover {
+    border: 2px solid #5b633f;
+    padding: 2px;
 }
 .quemsou {
     padding: 4px;
@@ -169,11 +177,19 @@ body {
     height: 30px;
     text-align: center;
 }
+.quemsou:hover {
+    border: 2px solid #5b633f;
+    padding: 2px;
+}
 .contato {
     padding: 4px;
     width: 80px;
     height: 30px;
     text-align: center;
+}
+.contato:hover {
+    border: 2px solid #5b633f;
+    padding: 2px;
 }
 .wpp { 
     position: fixed;
@@ -195,4 +211,29 @@ body {
     opacity: 0;
     cursor: pointer;
 }
-
+.logo23 {
+    position: fixed;
+    margin-left: -145px;
+    margin-right: auto;
+    top: 470px;
+    height: 140px;
+    background-color: rgba(91, 99, 63, 0);
+}
+.Content1 {
+    margin-left: 200px;
+    position: fixed;
+    top: 28px;
+}
+.Content1 a {
+    color: #000000;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.wpp2 {
+    height: 20px;
+    position: fixed;
+    margin-left: 175px;
+    top: 27px;
+}
