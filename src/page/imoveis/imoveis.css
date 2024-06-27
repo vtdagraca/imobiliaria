@@ -130,92 +130,6 @@
 }
 
 
-
-/* Estilos para a seção de imóveis de destaque */
-.destaques {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #5b633f;
-    width: 100%;
-    padding-top: 100px;
-  }
-  
-  .destaques h2 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 32px;
-    margin-bottom: 30px;
-    color: #ffffff;
-    background-color: #5b633f; 
-    height: 60px;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 11px;
-    border: 4px solid #d8bb5d;
-  }
-  
-  .imoveis-container {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-
-  .imovel {
-    position: relative;
-    flex: 1 1 calc(33.333% - 40px); /* Ajusta para 3 itens por linha, com espaçamento */
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .imovel img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-    border: 4px solid #d8bb5d;
-  }
-  
-  .imovel:hover img {
-    transform: scale(1.1);
-  }
-  
-  .imovel:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    transform: scale(0);
-    transition: transform 0.3s ease;
-  }
-  
-  .imovel:hover .overlay {
-    transform: scale(1);
-  }
-  
-  .overlay h3 {
-    color: white;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
 .Iwpp { 
     position: fixed;
     top: 490px;
@@ -235,9 +149,115 @@
     opacity: 0;
     cursor: pointer;
 }
-  
-  
-  
+
+
+.container {
+  padding-top: 100px;
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.slide-item {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  padding-top: 20px;
+}
+
+#destaques {
+  color: aliceblue;
+  background-color: rgba(216, 187, 93, 0.7);
+  width: 550px;
+  padding: 4px;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
 
 
 
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff; /* Cor de fundo dos bullets inativos */
+  opacity: 1.0;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #d8bb5d; /* Cor de fundo do bullet ativo */
+}
+
+/* Estilos para a navegação (botões anterior e próximo) */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000000;
+  background-color: #d8bb5d;
+  opacity: 1; 
+  border-radius: 15px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 30px; 
+}
+.slide-content {
+  position: relative;
+}
+.neighborhood {
+  position: absolute;
+  top: 30px; 
+  left: 10px; 
+  background-color: rgba(216, 187, 93, 0.7); 
+  color: #000000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 18px; 
+  z-index: 10; 
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  font-style: normal;
+}
+.price-tag {
+  position: absolute;
+  bottom: 10px; 
+  right: 10px; 
+  background-color: rgba(216, 187, 93, 0.7); 
+  color: #000000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 30px; 
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  font-style: normal;
+}
+
+.negocio {
+  padding-top: 100px;
+  margin-left: 100px;
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  font-style: normal;
+}
+.ache {
+  font-size: 80px;
+}
+.imgNegocio {
+  width: 290px;
+  padding: 0px;
+}
+.logoNegocio {
+  height: 100px;
+
+}
